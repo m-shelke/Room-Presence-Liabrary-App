@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+<!--    TextView : for showing simple text-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Daily,Expenses Manager"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:textSize="25dp"/>
+
+<!--    EditText for getting title input-->
+    <EditText
+        android:id="@+id/edTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Title"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_margin="15dp"
+        android:textColorHint="@color/black"/>
+
+<!--    EditText for getting Amount of the Exp-->
+    <EditText
+        android:id="@+id/edAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Today Amount"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:layout_margin="15dp"
+        android:textColorHint="@color/black"/>
+
+<!--    Material Button for add event handler -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cornerRadius="10dp"
+        android:text="Add"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+</LinearLayout>
